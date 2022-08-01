@@ -1,0 +1,600 @@
+@import 'utility.css';
+:root{
+    --primary : #b34835;
+    --dark: rgb(19, 18, 18);
+    --pure: white;
+    --secondary: rgb(237, 230, 230);
+    
+
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    font-family: 'Poppins' sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--dark);
+    height: 90%;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 75% 85%, 0 95%);
+    
+}
+.container{
+    max-width: 1164px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media(min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+
+header nav .left  a{
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    
+}
+header nav .left  a:hover{
+    color: var(--primary);
+    
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+.hero .left img{
+    width: 400px;
+    clip-path: circle();
+    margin-left: 4rem;
+}
+.hero .left{
+    margin-bottom: 1.4rem;
+}
+.hero .right{
+    color: aliceblue;
+    margin-left: -1rem;
+}
+.hero .right h6{
+    font-size: 1.3rem;
+    color: lightgrey;
+    margin-bottom: 0.3rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    font-family: 'samarkan' sans-serif;
+    margin-bottom: 2rem;
+
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right .moving-text{
+    margin-bottom: 2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    color: var(--primary);
+    
+}
+
+section{
+    padding: 11rem 0 ;
+}
+.about .arpit-img{
+   height: 450px;
+   margin-left: 10rem;
+   margin-right: 5rem;
+   padding: 1rem 0;
+}
+.about h1{
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about h1 span{
+    color: var(--primary);
+}
+.about h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.about h3 span{
+    color: var(--primary);
+}
+.about p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(14, 15, 15);
+    line-height: 1.8;
+    font-weight: 200;
+}
+.about .aboutme{
+    margin-right: 4rem;
+    
+}
+
+.section-heading{
+    color: black;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: -5rem;
+    line-height: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section-heading span{
+    color: var(--primary);
+}
+
+
+.skills .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    grid-auto-columns: auto;
+    margin: 0 2rem;
+}
+.skills .card-wrapper .card{
+    background:whitesmoke;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+
+}
+.skills{
+    background:var(--secondary);
+    margin: 3rem 4rem;
+}
+.skills .card-wrapper .card img{
+    height: 100px;
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.skills .card-wrapper .card h2{
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.skills .card-wrapper .card p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    
+}
+.skills .card-wrapper .card:hover{
+    color: whitesmoke;
+    background: grey;
+    transition: all 0.3s ease;
+    
+}
+
+.experience {
+    text-align: center;
+    background: rgba(0,0,0);
+    background-size: 2000px;
+    color: whitesmoke;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 75%, 50% 85%,25% 75%, 0 85%);
+}
+.experience h1{
+    font-size: 2.5rem;
+    margin-top: -5rem;
+    font-weight: 500;
+    
+}
+.experience h1 span{
+    color: var(--primary);
+}
+.exp1{
+    margin-top: -8rem;
+    margin-bottom: -15rem;
+    
+}
+section.exp1 .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.exp1 .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 35rem;
+}
+.exp1 .slider .slide h6{
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+    color: var(--primary);
+}
+.exp1 .slider .slide p{
+    margin-top: 1rem;
+}
+.exp1 .slider .slide span{
+    color: #36454f;
+    font-style: italic;
+}
+.exp1 .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+
+
+}
+.exp1 .slider-dots{
+    margin-top: 3rem;
+}
+.exp1 .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: lightgrey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.exp1 .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+
+}
+.contact{
+    margin-top: 5rem;
+}
+.contact .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: -5rem;
+    grid-gap: -1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+}
+.contact .container .card-wrapper .card{
+    text-align: center;
+}
+.contact .container .card-wrapper .card img{
+    width: 150px;
+    margin-bottom: 1.5rem;
+    clip-path: circle();
+}
+.contact .container .card-wrapper .card a{
+    text-decoration: none;
+    color: darkgrey;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+.contact .container .card-wrapper .card a:hover{
+    color: var(--primary);
+}
+.contact .container .card-wrapper .card h6{
+    font-size: 0.95rem;
+    color: darkgray;
+    margin-bottom: 3rem;
+}
+.contact .container .card-wrapper .card h1{
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 8rem;
+    
+}
+.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    padding:0 8rem;
+}
+.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid darkgrey;
+    
+}
+.contact .input-wrap-2 textarea{
+    padding: 0.5rem 0.5rem;
+    border: 1px solid darkgrey;
+}
+.contact input{
+    padding: 0.5rem 0.5rem;
+    border: 1px solid darkgrey;
+}
+
+.contact input:focus{
+    outline: none;
+}
+.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.footer{
+    text-align: center;
+    background: black;
+    color: whitesmoke;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamburger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background:transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.hamburger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--pure);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+
+}
+.mobile-nav ul li a{
+    color: rgb(19, 35, 35);
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.mobile-nav ul li a:hover{
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+.mobile-nav ul li{
+    padding-bottom: 1rem;
+}
+
+@media(max-width:1024px){
+    header #navbar{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hero .left img{
+        width: 250px;
+        margin-right: 2rem;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 10rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 88%, 0 95%);
+    }
+    .about .arpit-img{
+        height: 400px;
+        margin-left: 0;
+    }
+    .about .aboutme h1{
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .about .aboutme h6{
+        height: 1.25rem;
+    }
+    .about{
+        padding-top: -2rem;
+    }
+
+    .skills .card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .exp1 .slider .slide{
+        padding: 2rem 5rem;
+    }
+    .exp1 .slider .slide p{
+        margin: 0 2rem;
+    }
+    .contact .container .card-wrapper .card img{
+        width: 100px;
+    }
+    .hamburger img{
+        margin-right: 1rem;
+        
+    }
+    .times img{
+        margin-right: 1rem;
+        width: 20px;
+    }
+}
+
+@media(max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 97%, 0 100%);
+    }
+    
+    .hero .left{
+        margin-top: -5rem;
+    }
+    .hero .right{
+        margin-top: -3rem;
+        padding-bottom: 5rem;
+    }
+    .hero .right h6{
+        font-size: -0.5rem;
+    }
+    .hero .right h1{
+        font-size: -0.5rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .arpit-img{
+        
+        width: -1rem;
+        margin-top: -4rem;
+        margin-left: 4rem;
+    }
+    .about .aboutme{
+        text-align: start;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .about p{
+        margin-left: 0.5rem;
+       
+    }
+    section{
+        padding: 5rem 0;
+    }
+    .about{
+        margin-top: 3rem;
+    }
+    .section-heading{
+        font-size: -1rem;
+        margin-top: 0;
+        
+    }
+    .skills .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills{
+        margin: 3rem 1rem;
+    }
+    .experience h1{
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    .experience{
+        margin-bottom: 2rem;
+    }
+    .exp1 .slider .slide p{
+        text-align: start;
+    }
+    .exp1 .slider .slide span{
+        padding-bottom: 1rem;
+    }
+    .exp1 .slider-dots{
+        margin-top: 0rem;
+        padding-bottom: 5rem;
+    }
+    .exp1 .slider-dots .dots{
+        margin-top: -1rem;
+    }
+    .contact .container .card-wrapper{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact .container .card-wrapper .card a{
+        margin-bottom: 2rem;
+    }
+    .contact .container .card-wrapper .card h6{
+        margin-bottom: 0;
+    }
+    .contact .container .card-wrapper .card img{
+        margin-top: 3rem;
+    }
+    .contact .input-wrap{
+        margin-top: 3rem;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+    }
+    .contact .input-wrap-2{
+        padding: 0;
+    }
+    .skills .card-wrapper .card{
+        
+        padding-bottom: 3rem;
+    }
+    .skills .card-wrapper .card img{
+        height: 95px;
+    }
+    .times img{
+        width: 20px;
+        margin-right: 1rem;
+    }
+}
